@@ -1,7 +1,7 @@
-package main.java.ua.lviv.iot.manager.impl;
+package ua.lviv.iot.manager.impl;
 
 
-import main.java.ua.lviv.iot.models.GoodsInfo;
+import ua.lviv.iot.models.GoodsInfo;
 import java.io.IOException;
 import java.util.List;
 

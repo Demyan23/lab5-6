@@ -1,5 +1,5 @@
-package main.java.ua.lviv.iot.manager.impl;
-import main.java.ua.lviv.iot.models.GoodsInfo;
+package ua.lviv.iot.manager.impl;
+import ua.lviv.iot.models.GoodsInfo;
 import java.util.List;
 
 public interface  IGoodsManager {

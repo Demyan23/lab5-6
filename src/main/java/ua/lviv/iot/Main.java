@@ -1,10 +1,11 @@
-package main.java.ua.lviv.iot;
-import main.java.ua.lviv.iot.manager.impl.Writer;
-import main.java.ua.lviv.iot.manager.impl.Manager;
-import main.java.ua.lviv.iot.models.GoodsInfo;
-import main.java.ua.lviv.iot.models.BreadBins;
-import main.java.ua.lviv.iot.models.FoodContainers;
-import main.java.ua.lviv.iot.models.Thermoses;
+package ua.lviv.iot;
+import ua.lviv.iot.manager.Text;
+import ua.lviv.iot.manager.Writer;
+import ua.lviv.iot.manager.Manager;
+import ua.lviv.iot.models.GoodsInfo;
+import ua.lviv.iot.models.BreadBins;
+import ua.lviv.iot.models.FoodContainers;
+import ua.lviv.iot.models.Thermoses;
 import java.util.Arrays;
 import java.util.List;
 
@@ -30,7 +31,8 @@ public class Main {
 
         Writer writer = new Writer();
         writer.writeToFile(list);
-
+        Text text = new Text();
+        text.deleteWordsWithDigitsNumberLessThen5("b12345b aa1234c Ab4714EX bas1-2-3-4-5bas Adfda12-47-56basdA");
 
     }
 }

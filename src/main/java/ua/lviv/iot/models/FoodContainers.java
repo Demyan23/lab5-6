@@ -1,4 +1,4 @@
-package main.java.ua.lviv.iot.models;
+package ua.lviv.iot.models;
 
 public class FoodContainers extends GoodsInfo{
     public FoodContainers(String materialSet, int weightSet, String colourSet) {
@@ -6,12 +6,12 @@ public class FoodContainers extends GoodsInfo{
     }
     @Override
     public String getHeader() {
-        return String.format("%s, %s, %s\n", super.getHeader());
+        return String.format("%s, %s, %s", super.getHeader());
     }
 
     @Override
     public String toCSV() {
-        return String.format("%s, %s, %s\n", super.toCSV());
+        return String.format("%s, %s, %s", super.toCSV());
     }
 
     @Override
